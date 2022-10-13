@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControler : MonoBehaviour
-{
-    
+{    
     private float speed = 20f;
     private float turnSpeed = 45f;
     private float horizontalInput;
