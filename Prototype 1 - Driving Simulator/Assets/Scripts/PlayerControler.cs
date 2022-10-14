@@ -9,6 +9,10 @@ public class PlayerControler : MonoBehaviour
     private float horizontalInput;
     private float forwardInput;
 
+    void Start(){
+        transform.position = new Vector3(0.0f,0.0f,-3.21f);
+    }
+
     void Update()
     {
         //Moviendo el cochesito :D
