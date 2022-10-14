@@ -18,5 +18,13 @@ public class PlayerControler : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         transform.Rotate(Vector3.up,horizontalInput * turnSpeed * Time.deltaTime);
 
+        if(transform.position.x <= -7){
+            transform.position = new Vector3(-7, transform.position.y, transform.position.z);
+        }
+        if(transform.position.x >= 7){
+            transform.position = new Vector3(7, transform.position.y, transform.position.z);
+        }
+        
+
     }
 }

@@ -2,21 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamController : MonoBehaviour
-{   public Camera cam1;
-   public Camera cam2;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        cam1.enabled =true;
-        cam2.enabled =false ;
-    }
-        
+public class CamController : MonoBehaviour{   
 
-    // Update is called once per frame
-    void Update()
+    public GameObject mainCam;
+    public GameObject cam2;
+
+    private void Start()
     {
-      if(Input.GetButtonDown("F"));
+        mainCam.SetActive(true);
+        cam2.SetActive(false);
+
+    }
+    void Update(){
+        if(Input.GetButtonDown("Camera")){
+            if(mainCam.activeInHierarchy == true){
+                mainCam.SetActive(false);
+                cam2.SetActive(true);
+            }
+            else{
+                mainCam.SetActive(true);
+                cam2.SetActive(false);
+            }
+            Debug.Log("T");
+        }
     }
 }
