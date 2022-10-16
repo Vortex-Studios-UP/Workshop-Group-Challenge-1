@@ -4,16 +4,8 @@ using UnityEngine;
 
 public class FollowPlayer2 : MonoBehaviour
 {
-    public GameObject player;
-    private Vector3 offset = new Vector3(0, 4, 10);
-
     void Start(){
-        transform.position = new Vector3(174.0f,90.8f,70.02f);
-        transform.Rotate(0,180,0);
+        transform.position = new Vector3(-4.91f,4.11f,180.1f);
     }
   
-    void LateUpdate(){
-        transform.position = player.transform.position + offset;
-
-    }
 }
