@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// 2022-11-08 - RETROALIMENTACIÓN DE CHRISTIAN
+// Buen funcionamiento de script, pese a que es repetido.
+// Lo único que cambia con respecto a "PlayerControler.cs" es la variable de movimiento.
+// Podrían haber hecho las variables de movimiento públicas para reutilizar este script con ambos jugadores.
+
 public class PlayerControler2 : MonoBehaviour
 {
     private float speed = 20f;

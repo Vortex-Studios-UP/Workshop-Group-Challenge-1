@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// 2022-11-08 - RETROALIMENTACIÓN DE CHRISTIAN
+// Buen funcionamiento de script.
+// ¡Es muy impresionante que implementaron límites de movimiento! Felicidades.
+
 public class PlayerControler : MonoBehaviour
 {    
     private float speed = 20f;
